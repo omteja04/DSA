@@ -43,6 +43,7 @@ vector<int> leaders(vector<int> &arr) {
         }
         maxi = max(maxi, arr[i]);
     }
+    sort(leaders.begin(), leaders.end());
     return leaders;
 }
 
