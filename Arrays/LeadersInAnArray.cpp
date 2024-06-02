@@ -45,6 +45,9 @@ vector<int> leaders(vector<int> &arr) {
     }
     sort(leaders.begin(), leaders.end());
     return leaders;
+
+    // ^ TC - O(n) + O(n log n)
+    // ^ SC - O(n) {Return the array}
 }
 
 int main() {
