@@ -99,8 +99,8 @@ public:
             if (!node->containsKey(ch)) {
                 return;
             }
-            node = node->get(ch);
             node->decreasePrefix();
+            node = node->get(ch);
         }
         node->deleteEnd();
     }
