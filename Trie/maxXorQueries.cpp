@@ -7,6 +7,7 @@
 #define debug(x) cerr << "Line(" << __LINE__ << ") -> " << (#x) << " = " << (x) << '\n'
 using namespace std;
 
+/* https://leetcode.com/problems/maximum-xor-with-an-element-from-array/ */
 struct Node {
     Node *links[2];
     bool containsKey(int bit) { return links[bit] != nullptr; }
