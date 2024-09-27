@@ -55,9 +55,7 @@ vector<int> maxXorQueries(vector<int> &arr, vector<vector<int>> &queries) {
     // any answer is printed.
     // This is usually only possible when the queries do not update the original
     // element set before printing the result.
-    for (
-
-        int i = 0; i < queries.size(); i++) {
+    for (int i = 0; i < queries.size(); i++) {
         offlineQueries.push_back({queries[i][1], {queries[i][0], i}});
     }
     int n = arr.size();
