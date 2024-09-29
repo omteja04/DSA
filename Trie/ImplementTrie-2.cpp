@@ -8,13 +8,21 @@
 #define debug(x) cerr << "Line(" << __LINE__ << ") -> " << (#x) << " = " << (x) << '\n'
 using namespace std;
 
-struct Node {
+class Node {
+private:
     Node *links[26];
-    bool flag = false;
+    bool flag;
+    int cntEndsWith;
+    int cntPrefix;
 
-    int cntEndsWith = 0;
-    int cntPrefix = 0;
-
+public:
+    Node() {
+        flag = false;
+        for (long unsigned int i = 0; i < 26; i++)
+            links[i] = nullptr;
+        cntEndsWith = 0;
+        cntPrefix = 0;
+    }
     bool containsKey(char ch) {
         return links[ch - 'a'] != NULL;
     }
