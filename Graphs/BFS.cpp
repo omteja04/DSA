@@ -38,7 +38,7 @@ public:
         }
     }
     // ! TC-> O(n*2E)
-    vector<int> bfsOfGraph(int v, vector<int> graph[]) { // vectices
+    vector<int> bfsOfGraph(int v, vector<int> graph[]) { // vertices
         vector<int> bfs;
         vector<bool> visited(v + 1, false);
         queue<int> q;
